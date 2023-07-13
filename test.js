@@ -34,7 +34,7 @@ function startSurvey() {
 function getNewQuestion() {
     if (questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('finalScore', score);
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
     currentQuestion = availableQuesions[questionCounter];
     question.innerText = currentQuestion.question;
